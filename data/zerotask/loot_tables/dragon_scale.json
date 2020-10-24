@@ -1,0 +1,49 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:phantom_membrane",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "color": "light_purple",
+                "text": "Dragon Scale"
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": ""
+                },
+                {
+                  "color": "gray",
+                  "italic": false,
+                  "text": "When in Off Hand:"
+                },
+                {
+                  "color": "blue",
+                  "italic": false,
+                  "text": "Wither Immunity"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:enchant_randomly",
+              "enchantments": ["binding_curse"]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{HideFlags: 1, zt.dragon_scale: 1b, CustomModelData: 1340001}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

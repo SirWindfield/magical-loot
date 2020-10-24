@@ -1,0 +1,49 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:sunflower",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "color": "light_purple",
+                "text": "Antique Coin"
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": ""
+                },
+                {
+                  "color": "gray",
+                  "italic": false,
+                  "text": "When in Off Hand during a trade:"
+                },
+                {
+                  "color": "blue",
+                  "italic": false,
+                  "text": "Price reductions"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:enchant_randomly",
+              "enchantments": ["binding_curse"]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{HideFlags: 1, zt.coin: 1b, CustomModelData: 1340000 }"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:slime_ball",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "color": "light_purple",
+                "text": "Venomous Gel"
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": ""
+                },
+                {
+                  "color": "gray",
+                  "italic": false,
+                  "text": "When in Off Hand:"
+                },
+                {
+                  "color": "blue",
+                  "italic": false,
+                  "text": "Poison Immunity"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:enchant_randomly",
+              "enchantments": ["binding_curse"]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{HideFlags: 1, zt.gel: 1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

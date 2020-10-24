@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:flint_and_steel",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "color": "light_purple",
+                "text": "Dwarfen Lighter"
+              }
+            },
+            {
+              "function": "minecraft:enchant_randomly",
+              "enchantments": ["binding_curse"]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{HideFlags: 1, Unbreakable: 1b,  zt.fns: 1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

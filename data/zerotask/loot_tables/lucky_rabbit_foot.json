@@ -1,0 +1,78 @@
+{
+  "pools": [
+    {
+      "entries": [
+        {
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "color": "light_purple",
+                "text": "Lucky Rabbit's Foot"
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "amount": 1,
+                  "attribute": "generic.luck",
+                  "name": "Luck",
+                  "operation": "addition",
+                  "slot": "offhand"
+                }
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": ["binding_curse"]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{HideFlags: 1, isLuckyRB: 1b}"
+            }
+          ],
+          "name": "minecraft:rabbit_foot",
+          "type": "minecraft:item",
+          "weight": 9
+        },
+        {
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "color": "light_purple",
+                "text": "Lucky Rabbit's Foot"
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "amount": 2,
+                  "attribute": "generic.luck",
+                  "name": "Luck",
+                  "operation": "addition",
+                  "slot": "offhand"
+                }
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": ["binding_curse"]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{HideFlags: 1, zt.rabbit_foot: 1b}"
+            }
+          ],
+          "name": "minecraft:rabbit_foot",
+          "type": "minecraft:item",
+          "weight": 1
+        }
+      ],
+      "rolls": 1
+    }
+  ],
+  "type": "minecraft:entity"
+}
