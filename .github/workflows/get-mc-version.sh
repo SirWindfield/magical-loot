@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Derives the MC Version from the package version.
-pack_version="$1"
+pack_version=$(jq '.pack.pack_format' pack.mcmeta)
 case "$pack_version" in
   1 )
     echo ::set-output name=MC_VERSION::"1.6.1-1.8.9"
