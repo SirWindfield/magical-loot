@@ -10,3 +10,6 @@ execute as @p[nbt={ActiveEffects: [{Id: 19b}], Inventory: [{Slot: -106b, tag: {z
 
 # Check for the dragon scale and remove the wither effect if applicable.
 execute as @p[nbt={ActiveEffects: [{Id: 20b}], Inventory: [{Slot: -106b, tag: {zt.dragon_scale: 1b}}]}] run effect clear @s minecraft:wither
+
+# Check for the clock and remove the slowness effect if applicable.
+execute as @p[nbt={ActiveEffects: [{Id: 2b}], Inventory: [{Slot: -106b, tag: {zt.clock: 1b}}]}] run effect clear @s minecraft:slowness

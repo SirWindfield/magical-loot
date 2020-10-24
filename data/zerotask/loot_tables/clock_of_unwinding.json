@@ -1,0 +1,61 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:clock",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "color": "light_purple",
+                "text": "Clock of Unwinding"
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": ""
+                },
+                {
+                  "color": "gray",
+                  "italic": false,
+                  "text": "When in Off Hand:"
+                },
+                {
+                  "color": "blue",
+                  "italic": false,
+                  "text": "Slowness Immunity"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:enchant_randomly",
+              "enchantments": ["binding_curse"]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "generic.movement_speed",
+                  "amount": 0.1,
+                  "name": "Clock of Unwinding",
+                  "operation": "multiply_total",
+                  "slot": "offhand"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{HideFlags: 1, zt.clock: 1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
