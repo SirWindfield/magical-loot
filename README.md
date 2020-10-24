@@ -4,7 +4,7 @@
 
 ## Installation
 
-Download the latest release from [here][latest] and put the zip file into the `datapacks` folder of your Minecraft world.
+Download the latest release from [here][latest] and put the zip file into the `datapacks` folder of your Minecraft world. If the pack has a `resourcepack` as well, put it into the `resourcepacks` folder of your Minecraft installation and enable it.
 
 ## Crafting
 
@@ -18,5 +18,5 @@ The data pack is licensed under the GPLv3. For more information, take a look at 
 
 The ideas are taken from [this mod][mod] and applied to Vanilla items.
 
-[latest]: https://github.com/SirWindfield/REPLACE/releases/latest
+[latest]: https://github.com/SirWindfield/magical-items/releases/latest
 [mod]: https://www.curseforge.com/minecraft/mc-mods/bountifulbaubles
