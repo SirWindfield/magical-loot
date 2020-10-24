@@ -21,7 +21,7 @@ jobs:
         with:
           args: zip -qq datapack.zip -r data pack.mcmeta LICENSE README.md
       - name: Create asset pack zip file
-        uses: montudor/actions-zip@v0.1.0
+        uses: montudor/action-zip@v0.1.0
         with:
           args: zip -qq assetpack.zip -r assets pack.mcmeta LICENSE README.md
 
@@ -37,7 +37,6 @@ jobs:
           prerelease: false
 
       - name: Upload assetpack release asset
-        id: upload-release-asset
         uses: actions/upload-release-asset@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -47,7 +46,6 @@ jobs:
           asset_name: ${{ github.event.repository.name }}-${{ steps.tag_version.outputs.TAG_VERSION }}-mc${{ steps.mc_version.outputs.MC_VERSION }}-resourcepack.zip
           asset_content_type: application/zip
       - name: Upload datapack release asset
-        id: upload-release-asset
         uses: actions/upload-release-asset@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
