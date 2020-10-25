@@ -10,6 +10,28 @@ Download the latest release from [here][latest] and put the zip file into the `d
 
 The items can't be crafted and are dropped by killing mobs. They do have a percentage drop chance and have been added to the mob's drop pool.
 
+## Compatibility
+
+The data pack changes the following Vanilla data:
+
+### Loot Tables
+
+- `chests/abandoned_mineshaft`
+- `entities/cave_spider`
+- `entities/creeper`
+- `entities/ender_dragon`
+- `entities/rabbit`
+
+You'd have to manually merge the loot table files to be able to load both data packs at the same time.
+
+### Custom Model Data
+
+Additionally, the data pack does add custom model predicates to the following item models:
+
+- `phantom_membrane`
+
+These models are fully optional. The items still make sense without the resourcepack and the custom models.
+
 ## License
 
 The data pack is licensed under the GPLv3. For more information, take a look at the license file within this repository.

@@ -73,7 +73,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:rabbit_foot",
-          "weight": 1
+          "weight": 3
         },
         {
           "type": "minecraft:loot_table",
