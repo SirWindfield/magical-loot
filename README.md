@@ -40,5 +40,5 @@ The data pack is licensed under the GPLv3. For more information, take a look at 
 
 The ideas are taken from [this mod][mod] and applied to Vanilla items.
 
-[latest]: https://github.com/SirWindfield/magical-items/releases/latest
+[latest]: https://github.com/SirWindfield/magical-loot/releases/latest
 [mod]: https://www.curseforge.com/minecraft/mc-mods/bountifulbaubles
