@@ -50,6 +50,13 @@
       "rolls": 1,
       "conditions": [
         {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "nbt": "{powered: 1b}"
+          }
+        },
+        {
           "condition": "minecraft:weather_check",
           "thundering": true
         }
